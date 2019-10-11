@@ -1,0 +1,163 @@
+body{
+	background-image : url("backLogin.jpg");
+	background-position: center;
+    background-size: cover;
+    height: 100vh;
+	color : white;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-size: 20px;
+}
+
+
+
+#loginMain{
+	padding : 20px;
+}
+
+input{
+	background : rgba(20, 20, 20, 0.7);
+	width: 100%;
+	margin-bottom : 10px;
+	padding : 10px;
+	border-radius: 10px;
+	border : 0;
+	color : #FFF;
+	font-size : 20px;
+}
+
+#loginHere{
+	color: #000;
+	float : left;
+	left: 20px;
+	top : 40px;
+	position : fixed;	
+}
+
+#noAcc{
+	color: #000;
+	float : right;
+	right: 20px;
+	bottom : 40px;
+	position : fixed;	
+}
+
+button{
+	background : rgba(10, 10, 10, 0.7);
+	width: 100%;
+	margin-bottom : 10px;
+	padding : 10px;
+	border-radius: 20px;
+	border : 0;
+	color : #FFF;
+	font-size : 20px;
+}
+
+select{
+	background : rgba(20, 20, 20, 0.7);
+	width: 100%;
+	margin-bottom : 10px;
+	padding : 10px;
+	border-radius: 10px;
+	border : 0;
+	color : #FFF;
+	font-size : 20px;
+}
+
+#fcredits{
+	color: #000;
+	bottom : 0;
+	right: 0;
+	position : fixed;
+	width : 100%;
+	background : rgba(5, 5, 5, 0.7);
+	text-align : center;
+	color : #eee;  
+	padding : 5px;
+}
+
+#signupMain{
+	width: 80%;
+	padding : 20px;
+}
+
+#signupBtn{
+	width : 50%;
+}
+
+#accDelete{
+	float : left;
+	left : 10px;
+	margin : 0 5px 10px 5px;
+	width : 10%;
+}
+
+#date{
+	float : right;
+	right : 0;
+	width: 50%;
+	text-align: right;
+}
+
+#midSection{
+	margin : 10px;
+	width : 80%;
+	padding : 20px 0 0 0;
+}
+
+.midBtns{
+	float : right;
+	right : 0;
+	text-align: right;
+	margin: 0;
+}
+
+#addBtn{ 
+	width : 10%;
+	right: 0;
+}
+
+#clear{ 
+	width : 10%;
+	right : 0;
+}
+
+#taskContain{
+	width: 100%;
+	background-color : rgba(200, 200, 200, 0.3);
+	color : #222;
+	padding: 10px;
+}
+
+.trashDone{ 
+	width : 10%;
+	right: 0;
+}
+
+.done{ 
+	width : 10%;
+	right: 0;
+}
+
+.trash{ 
+	width : 10%;
+	right: 0;
+}
+
+ul{
+	list-style-type : none;
+}
+
+li{
+	width : 80%;
+	text-align: center;
+	border-radius : 20px;
+}
+
+#done{
+	background-color : rgba(100, 250, 100, 0.7);
+}
+
+#notDone{
+	background-color : rgba(250, 100, 100, 0.7);
+}

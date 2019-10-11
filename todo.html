@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>To Do Application</title>
+		<link rel = "stylesheet" href = "style.css">
+		<script type="text/javascript" charset="utf-8" src="js/wormhole.js"></script>
+		<script type="text/javascript">
+			// Close the application when the back key is pressed.
+			document.addEventListener(
+				"backbutton",
+				function() { mosync.app.exit(); },
+				true);
+		</script>
+	</head>
+	<body>
+		<div id = "loginMain">
+			<div id = "loginHere">
+			<input id = "username" type = "text" placeholder = "Username"></input>
+			<br>
+			<input id = "pass" type = "password" placeholder = "Password"></input>
+			<br>
+			<button id = "loginBtn" style = "width : 200px">Login</button>
+			</div>
+			<div id = "noAcc">
+				Don't have an account? <br><button id = "enterBtn">Signup Here</button>
+			</div>
+		</div>
+		<div id = "signupMain">
+			<input id = "usernameS" type = "text" placeholder = "Username"></input>
+			<br>
+			<input id = "passS" type = "password" placeholder = "Password"></input>
+			<br>
+			<input id = "passTemp" type = "password" placeholder = "Reassure Password"></input>
+			<br>
+			<button id = "signupBtn">Sign Up</button>
+		</div>
+		<div id = "toDoMain">
+			<div id = "head">
+				<image id = "accDelete" onclick = "deleteAcc()" src = "delAcc.png"/>
+				&nbsp;
+				<image id = "accDelete" onclick = "location.reload()" src = "logout.png"/>
+				<div id = "date"></div>
+			</div>
+			<br>
+			<div id = "midSection">
+				<input id = "task" placeholder = "Enter the task">
+				<p>Task To Be Done On : </p>
+				<input id  = "fromDateTime" type = "datetime-local" min="2019-10-11T00:00">
+				<br>
+				<input id  = "timeLimit" placeholder = "Duration">
+				<br>
+				<select id = "timeLimitUnit">
+				  <option value="Minutes">Minutes</option>
+				  <option value="Hours">Hours</option>
+				  <option value="Days">Days</option>
+				  <option value="Weeks">Weeks</option>
+				</select>
+				<br>
+			</div>
+			<div class = "midBtns">
+				<image id="addBtn" src = "addBtn.png"/>
+				&nbsp;
+				<image id="clear" onclick = "clearAllTasks()" src = "refresh.png"></button>
+			</div>
+			<br><br>
+			<div id = "taskContain">
+				<h2 class = "subText">Tasks to be Done</h2>
+				<div id="items"></div>
+				<hr>
+				<h2 class = "subText">Tasks Competed</h2>
+				<div id="taskDone"></div>
+			</div>
+		</div>	
+		<footer id = "fcredits">App Developed By Himesh Nayak</footer>
+		<script src = "app.js"></script>
+	</body>
+</html>
